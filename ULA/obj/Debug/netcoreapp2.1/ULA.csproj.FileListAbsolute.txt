@@ -1,0 +1,14 @@
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.csprojAssemblyReference.cache
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.csproj.CoreCompileInputs.cache
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.AssemblyInfoInputs.cache
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.AssemblyInfo.cs
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.deps.json
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.runtimeconfig.json
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.runtimeconfig.dev.json
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.dll
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.pdb
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\POO_PortasLogicas.dll
+C:\Users\Duarte\source\repos\ULA\ULA\bin\Debug\netcoreapp2.1\POO_PortasLogicas.xml
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.csproj.CopyComplete
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.dll
+C:\Users\Duarte\source\repos\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.pdb

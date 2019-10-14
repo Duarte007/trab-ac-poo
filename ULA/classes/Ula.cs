@@ -31,6 +31,7 @@ namespace ULA {
         }
 
         public int getResult(){
+            POO_PortasLogicas.Or2 or = new POO_PortasLogicas.Or2();
             return 0;
         }
 

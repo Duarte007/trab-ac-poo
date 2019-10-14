@@ -9,6 +9,8 @@ namespace ULA {
         private int saidaD1;
         private int saidaD2;
         private int saidaD3;
+
+        private int saidaUL1, saidaUL2, saidaUL3;
         
 
         public UnidadeLogica(int entradaA, int entradaB, int saidaD1, int saidaD2, int saidaD3){
@@ -19,16 +21,46 @@ namespace ULA {
             this.saidaD3 = saidaD3;
         }
 
+        public void resolveCircuito(){
+            POO_PortasLogicas.And2 and1 = new POO_PortasLogicas.And2();
+            POO_PortasLogicas.And2 and2 = new POO_PortasLogicas.And2();
+            POO_PortasLogicas.And2 and3 = new POO_PortasLogicas.And2();
+            POO_PortasLogicas.And2 and4 = new POO_PortasLogicas.And2();
+            POO_PortasLogicas.Not notB = new POO_PortasLogicas.Not();
+            POO_PortasLogicas.Or2 or = new POO_PortasLogicas.Or2();
+
+            and1.setBit1(entradaA);
+            and1.setBit2(entradaB);
+            int resultAnd1 = and1.result();
+
+            or.setBit1(entradaA);
+            or.setBit1(entradaB);
+            int resultOr = or.result();
+
+            and2.setBit1(resultAnd1);
+            and2.setBit1(this.saidaD1);
+            this.saidaUL1 = and2.result();
+
+            and3.setBit1(resultOr);
+            and3.setBit1(this.saidaD2);
+            this.saidaUL2 = and2.result();
+
+            notB.setBit1(entradaB);
+            and4.setBit1(notB.getBit1());
+            and4.setBit2(this.saidaD3);
+            this.saidaUL3 = and4.result();
+        }
+
         public int getSaidaUL1(){
-            return 0;
+            return this.saidaUL1;
         }
 
         public int getSaidaUL2(){
-            return 0;
+            return this.saidaUL2;
         }
 
         public int getSaidaUL3(){
-            return 0;
+            return this.saidaUL3;
         }
     }
 }

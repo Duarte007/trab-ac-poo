@@ -16,6 +16,21 @@ namespace ULA {
             this.carryIn = carryIn;
         }
 
+        public void resolveCircuito(){
+            //TODO
+            POO_PortasLogicas.And2 and1 = new POO_PortasLogicas.And2();
+            // POO_PortasLogicas.And2 and2 = new POO_PortasLogicas.And2();
+            // POO_PortasLogicas.And2 and3 = new POO_PortasLogicas.And2();
+            POO_PortasLogicas.Xor2 xor1 = new POO_PortasLogicas.Xor2();
+            POO_PortasLogicas.Xor2 xor2 = new POO_PortasLogicas.Xor2();
+            POO_PortasLogicas.Or2 or = new POO_PortasLogicas.Or2();
+
+            xor1.setBit1(entradaB);
+            xor1.setBit1(entradaA);
+
+
+        }
+
         public int getSaidaSC(){
             return 0;
         }

@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>POO_PortasLogicas</name>
+    </assembly>
+    <members>
+        <member name="M:POO_PortasLogicas.And2.setBit1(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b1">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.And2.setBit2(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b2">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.And2.getBit1">
+            <summary>
+            Retorna o valor do primeiro bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.And2.getBit2">
+            <summary>
+            Retorna o valor do segundo bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.And2.#ctor">
+            <summary>
+            Construtor padrão. Dois bits falsos.
+            </summary>
+        </member>
+        <member name="M:POO_PortasLogicas.And2.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Construtor recebendo os bits por padrão
+            </summary>
+            <param name="b1">Primeiro bit, 0 ou 1</param>
+            <param name="b2">Segundo bit, 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.And2.result">
+            <summary>
+            Resultado do AND, 0 ou 1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.And3.setBit3(System.Int32)">
+            <summary>
+            Atribui valor ao terceiro bit
+            </summary>
+            <param name="b3">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.And3.getBit3">
+            <summary>
+            Retorna o valor do terceiro bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.And3.result">
+            <summary>
+            Resultado do AND, 0 ou 1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Not.setBit1(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b1">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Not.getBit1">
+            <summary>
+            Retorna o valor do primeiro bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Not.#ctor">
+            <summary>
+            Construtor padrão. Dois bits falsos.
+            </summary>
+        </member>
+        <member name="M:POO_PortasLogicas.Not.#ctor(System.Int32)">
+            <summary>
+            Construtor recebendo o bit por padrão
+            </summary>
+            <param name="b1">Primeiro bit, 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Not.result">
+            <summary>
+            Resultado do AND, 0 ou 1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.setBit1(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b1">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.setBit2(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b2">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.getBit1">
+            <summary>
+            Retorna o valor do primeiro bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.getBit2">
+            <summary>
+            Retorna o valor do segundo bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.#ctor">
+            <summary>
+            Construtor padrão. Dois bits falsos.
+            </summary>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Construtor recebendo os bits por padrão
+            </summary>
+            <param name="b1">Primeiro bit, 0 ou 1</param>
+            <param name="b2">Segundo bit, 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Or2.result">
+            <summary>
+            Resultado do OR, 0 ou 1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Or4.getBit3">
+            <summary>
+            Retorna o valor do terceiro bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Or4.getBit4">
+            <summary>
+            Retorna o valor do quarto bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Or4.setBit3(System.Int32)">
+            <summary>
+            Atribui valor ao terceiro bit
+            </summary>
+            <param name="b3">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Or4.setBit4(System.Int32)">
+            <summary>
+            Atribui valor ao quarto bit
+            </summary>
+            <param name="b4">Inteiro 0 ou 1</param>
+        </member>
+        <member name="T:POO_PortasLogicas.Xor2">
+            <summary>
+            Implementa uma porta XOR com entrada de 2 bits
+            </summary>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.setBit1(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b1">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.setBit2(System.Int32)">
+            <summary>
+            Atribui valor ao primeiro bit
+            </summary>
+            <param name="b2">Inteiro 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.getBit1">
+            <summary>
+            Retorna o valor do primeiro bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.getBit2">
+            <summary>
+            Retorna o valor do segundo bit (0 ou 1)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.#ctor">
+            <summary>
+            Construtor padrão. Dois bits falsos.
+            </summary>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Construtor recebendo os bits por padrão
+            </summary>
+            <param name="b1">Primeiro bit, 0 ou 1</param>
+            <param name="b2">Segundo bit, 0 ou 1</param>
+        </member>
+        <member name="M:POO_PortasLogicas.Xor2.result">
+            <summary>
+            Resultado do OR, 0 ou 1
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

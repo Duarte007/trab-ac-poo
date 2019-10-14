@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Reference Include="POO_PortasLogicas">
-      <HintPath>D:\Acadêmico\PUC\2° Periodo\POO\POO_PortasLogicas.dll</HintPath>
+      <HintPath>$(SolutionDir)\POO_PortasLogicas.dll</HintPath>
     </Reference>
   </ItemGroup>
 
