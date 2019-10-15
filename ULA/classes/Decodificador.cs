@@ -42,17 +42,17 @@ namespace ULA {
 
             notF0.setBit1(f0);
             notF1.setBit1(f1);
-
-            and1.setBit1(notF0.getBit1());
-            and1.setBit2(notF1.getBit1());
+            
+            and1.setBit1(notF0.result());
+            and1.setBit2(notF1.result());
             this.saidaD1 = and1.result();
 
-            and2.setBit1(notF0.getBit1());
+            and2.setBit1(notF0.result());
             and2.setBit2(f1);
             this.saidaD2 = and2.result();
 
             and3.setBit1(f0);
-            and3.setBit2(notF1.getBit1());
+            and3.setBit2(notF1.result());
             this.saidaD3 = and3.result();
 
             and4.setBit1(f0);

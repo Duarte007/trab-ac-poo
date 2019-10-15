@@ -27,24 +27,18 @@ namespace ULA {
 
                 Console.Clear();
                 Console.WriteLine("A: " + numA.ToString() + " | B: " + numB.ToString());
-               
+
+                Ula u = new Ula(numA, numB, operacao, 0);
+
+                Console.WriteLine("O resultado é: " + u.getResult());
+
                 do
                 {
                     Console.Write("\n\nDeseja continuar? (s/n)");
                 } while (char.TryParse(Console.ReadLine().ToLower(), out rep) && (!rep.Equals('s') && !rep.Equals('n')));
 
             } while (rep.Equals('s'));
-
-            Ula u = new Ula(numA,numB,rep,0);
-
-            Console.WriteLine("O resultado é: " + u.getResult());  
-
-            Console.ReadKey();
-
-
-
-
+                                          
         }
     }
-    }
-
+}

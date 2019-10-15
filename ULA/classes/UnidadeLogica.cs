@@ -34,19 +34,19 @@ namespace ULA {
             int resultAnd1 = and1.result();
 
             or.setBit1(this.entradaA);
-            or.setBit1(this.entradaB);
+            or.setBit2(this.entradaB);
             int resultOr = or.result();
 
             and2.setBit1(resultAnd1);
-            and2.setBit1(this.saidaD1);
+            and2.setBit2(this.saidaD1);
             this.saidaUL1 = and2.result();
 
             and3.setBit1(resultOr);
-            and3.setBit1(this.saidaD2);
-            this.saidaUL2 = and2.result();
+            and3.setBit2(this.saidaD2);
+            this.saidaUL2 = and3.result();
 
             notB.setBit1(this.entradaB);
-            and4.setBit1(notB.getBit1());
+            and4.setBit1(notB.result());
             and4.setBit2(this.saidaD3);
             this.saidaUL3 = and4.result();
         }

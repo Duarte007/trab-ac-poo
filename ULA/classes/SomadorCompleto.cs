@@ -31,11 +31,11 @@ namespace ULA {
             /* PARTE DO CIRCUITO PARA SAIDA DO SOMADOR COMPLETO */
 
             xor1.setBit1(this.entradaB);
-            xor1.setBit1(this.entradaA);
+            xor1.setBit2(this.entradaA);
             int resultXor1 = xor1.result();
 
             xor2.setBit1(resultXor1);
-            xor2.setBit1(this.carryIn);
+            xor2.setBit2(this.carryIn);
             int resultXor2 = xor2.result();
 
             and5.setBit1(resultXor2);

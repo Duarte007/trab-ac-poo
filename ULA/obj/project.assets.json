@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ian\\.nuget\\packages\\": {},
+    "C:\\Users\\Duarte\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ian\\Documents\\GitHub\\trab-ac-poo\\ULA\\ULA.csproj",
+      "projectUniqueName": "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\ULA.csproj",
       "projectName": "ULA",
-      "projectPath": "C:\\Users\\Ian\\Documents\\GitHub\\trab-ac-poo\\ULA\\ULA.csproj",
-      "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ian\\Documents\\GitHub\\trab-ac-poo\\ULA\\obj\\",
+      "projectPath": "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\ULA.csproj",
+      "packagesPath": "C:\\Users\\Duarte\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Duarte\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
