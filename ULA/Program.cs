@@ -35,7 +35,7 @@ namespace ULA {
         static void Main(string[] args) {
          
 
-            int operacao;            
+            int operacao = -1;            
             char rep;
             do
             {
@@ -48,6 +48,7 @@ namespace ULA {
                             Console.WriteLine("Opcao invalida!");
                         }
                     } catch (Exception error){
+                        operacao = -1;
                         Console.WriteLine(error.Message);
                     }
                 } while (operacao < 0 || operacao > 4);
