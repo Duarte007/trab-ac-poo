@@ -23,12 +23,12 @@ namespace ULA {
             this.saidaD2 = this.decodificador.getSaidaDecod2();
             this.saidaD3 = this.decodificador.getSaidaDecod3();
             this.saidaD4 = this.decodificador.getSaidaDecod4();
-            this.unidadeLogica = new UnidadeLogica(entradaA, entradaB, saidaD1, saidaD2, saidaD3);
+            this.unidadeLogica = new UnidadeLogica(entradaA, entradaB, this.saidaD1, this.saidaD2, this.saidaD3);
             this.unidadeLogica.resolveCircuito();
             this.saidaUL1 = unidadeLogica.getSaidaUL1();
             this.saidaUL2 = unidadeLogica.getSaidaUL2();
             this.saidaUL3 = unidadeLogica.getSaidaUL3();
-            this.somadorCompleto = new SomadorCompleto(entradaA, entradaB, saidaD4, carryIn);
+            this.somadorCompleto = new SomadorCompleto(entradaA, entradaB, this.saidaD4, carryIn);
             this.somadorCompleto.resolveCircuito();
             this.saidaSC = somadorCompleto.getSaidaSC();
             this.carryOut = somadorCompleto.getCarryOut();
