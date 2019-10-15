@@ -13,7 +13,7 @@ namespace ULA {
                         Console.WriteLine("Valor invalido!");
                     }
                 } catch (Exception error){
-                    Console.WriteLine(error.Message());
+                    Console.WriteLine(error.Message);
                 }
             } while (numA != 0 && numA != 1);
         }
@@ -27,7 +27,7 @@ namespace ULA {
                         Console.WriteLine("Valor invalido!");
                     }
                 } catch (Exception error){
-                    Console.WriteLine(error.Message());
+                    Console.WriteLine(error.Message);
                 }
             } while (numB != 0 && numB != 1);
         }
@@ -42,7 +42,11 @@ namespace ULA {
                 do{
                     Console.Clear();
                     Console.Write("\n\n(0) A and B\n(1) A or B\n(2) not A \n(3) not B \n(4) A + B" + "\n\nEscolha a operação: ");
-                } while (!int.TryParse(Console.ReadLine(), out operacao) && (operacao < 0 && operacao > 4));
+                    operacao = int.Parse(Console.ReadLine());
+                    if(operacao < 0 || operacao > 4){
+                        Console.WriteLine("Opcao invalida!");
+                    }
+                } while (operacao < 0 || operacao > 4);
 
                 switch(operacao){
                     case 0:
