@@ -22,10 +22,11 @@ namespace ULA {
                     this.f1 = 1;
                 break;
                 case 2: //not
+                case 3: 
                     this.f0 = 1;
                     this.f1 = 0;
                 break;
-                case 3: //soma
+                case 4: //soma
                     this.f0 = 1;
                     this.f1 = 1;
                 break;

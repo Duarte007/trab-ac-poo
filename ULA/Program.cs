@@ -5,11 +5,14 @@ namespace ULA {
         static void Main(string[] args) {
          
 
-            int numA, numB, operacao;            
+            int numA = 0, numB = 0, operacao;            
             char rep;
             do
             {
                 Console.Clear();
+                Console.Write("\n\n(0) A and B\n(1) A or B\n(2) not A \n(3) not B \n(4) A + B" + "\n\nEscolha a operação: ");
+                while (!int.TryParse(Console.ReadLine(), out operacao) && (operacao < 0 || operacao > 3)) ;
+
                 do
                 {
                     Console.Write("Insira um 0 ou 1 para A: ");
@@ -19,11 +22,6 @@ namespace ULA {
                 {
                     Console.Write("Insira 0 ou 1 para B: ");
                 } while (!int.TryParse(Console.ReadLine(), out numB) && (numA >= 0 && numA <= 1));
-
-                Console.Clear();
-                Console.WriteLine("A: " + numA.ToString() + " | B: " + numB.ToString());
-                Console.Write("\n\nA and B (0)\nA or B (1)\nA not B (2)\nA + B(3)" + "\n\nEscolha a operação: ");
-                while (!int.TryParse(Console.ReadLine(), out operacao) && (operacao < 0 || operacao > 3)) ;
 
                 Console.Clear();
                 Console.WriteLine("A: " + numA.ToString() + " | B: " + numB.ToString());
