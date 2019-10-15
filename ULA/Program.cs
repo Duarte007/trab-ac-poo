@@ -6,14 +6,24 @@ namespace ULA {
 
         static void getEntradaA(){
             do{
-                Console.Write("Insira um 0 ou 1 para A: ");
-            } while (!int.TryParse(Console.ReadLine(), out numA) && (numA != 0 && numA != 1));
+                try{
+                    Console.Write("Insira um 0 ou 1 para A: ");
+                    numA = int.Parse(Console.ReadLine()); 
+                } catch (Exception error){
+                    Console.WriteLine(error.Message());
+                }
+            } while (numB != 0 && numB != 1);
         }
 
         static void getEntradaB(){
             do{
-                Console.Write("Insira um 0 ou 1 para B: ");
-            } while (!int.TryParse(Console.ReadLine(), out numB) && (numB != 0 && numB != 1));
+                try{
+                    Console.Write("Insira um 0 ou 1 para B: ");
+                    numB = int.Parse(Console.ReadLine()); 
+                } catch (Exception error){
+                    Console.WriteLine(error.Message());
+                }
+            } while (numB != 0 && numB != 1);
         }
 
         static void Main(string[] args) {
