@@ -2,7 +2,7 @@ using System;
 using POO_PortasLogicas;
 
 namespace ULA {
-    class Decodificador {
+    class Decodificador:Circuito {
         private int f0;
         private int f1;
         private int saidaD1, saidaD2, saidaD3, saidaD4;

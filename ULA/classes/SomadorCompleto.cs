@@ -2,7 +2,7 @@ using System;
 using POO_PortasLogicas;
 
 namespace ULA {
-    class SomadorCompleto {
+    class SomadorCompleto:Circuito {
         private int entradaA;
         private int entradaB;
         private int saidaD4;

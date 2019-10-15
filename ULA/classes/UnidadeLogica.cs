@@ -3,7 +3,7 @@ using POO_PortasLogicas;
 
 namespace ULA {
 
-    class UnidadeLogica {
+    class UnidadeLogica:Circuito {
         private int entradaA;
         private int entradaB;
         private int saidaD1;

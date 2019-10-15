@@ -2,7 +2,7 @@ using System;
 using POO_PortasLogicas;
 
 namespace ULA {
-    class Ula {
+    class Ula:Circuito {
         private int carryOut;
         private UnidadeLogica unidadeLogica;
         private Decodificador decodificador;
@@ -34,7 +34,7 @@ namespace ULA {
             this.carryOut = somadorCompleto.getCarryOut();
         }
 
-        public int getResult(){
+        public int resolveCircuito(){
             POO_PortasLogicas.Or2 or1 = new POO_PortasLogicas.Or2(this.saidaUL1, this.saidaUL2);
             int resultOr1 = or1.result();
             POO_PortasLogicas.Or2 or2 = new POO_PortasLogicas.Or2(resultOr1, this.saidaUL3);
