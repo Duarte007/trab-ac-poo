@@ -29,12 +29,12 @@ namespace ULA {
             POO_PortasLogicas.Not notB = new POO_PortasLogicas.Not();
             POO_PortasLogicas.Or2 or = new POO_PortasLogicas.Or2();
 
-            and1.setBit1(entradaA);
-            and1.setBit2(entradaB);
+            and1.setBit1(this.entradaA);
+            and1.setBit2(this.entradaB);
             int resultAnd1 = and1.result();
 
-            or.setBit1(entradaA);
-            or.setBit1(entradaB);
+            or.setBit1(this.entradaA);
+            or.setBit1(this.entradaB);
             int resultOr = or.result();
 
             and2.setBit1(resultAnd1);
@@ -45,7 +45,7 @@ namespace ULA {
             and3.setBit1(this.saidaD2);
             this.saidaUL2 = and2.result();
 
-            notB.setBit1(entradaB);
+            notB.setBit1(this.entradaB);
             and4.setBit1(notB.getBit1());
             and4.setBit2(this.saidaD3);
             this.saidaUL3 = and4.result();

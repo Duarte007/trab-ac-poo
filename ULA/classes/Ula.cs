@@ -18,24 +18,31 @@ namespace ULA {
 
         public Ula(int entradaA, int entradaB, int operacao, int carryIn){
             this.decodificador = new Decodificador(operacao);
+            this.decodificador.resolveCircuito();
             this.saidaD1 = this.decodificador.getSaidaDecod1();
             this.saidaD2 = this.decodificador.getSaidaDecod2();
             this.saidaD3 = this.decodificador.getSaidaDecod3();
             this.saidaD4 = this.decodificador.getSaidaDecod4();
             this.unidadeLogica = new UnidadeLogica(entradaA, entradaB, saidaD1, saidaD2, saidaD3);
+            this.unidadeLogica.resolveCircuito();
             this.saidaUL1 = unidadeLogica.getSaidaUL1();
             this.saidaUL2 = unidadeLogica.getSaidaUL2();
             this.saidaUL3 = unidadeLogica.getSaidaUL3();
             this.somadorCompleto = new SomadorCompleto(entradaA, entradaB, saidaD4, carryIn);
+            this.somadorCompleto.resolveCircuito();
             this.saidaSC = somadorCompleto.getSaidaSC();
+            this.carryOut = somadorCompleto.getCarryOut();
         }
 
         public int getResult(){
-            POO_PortasLogicas.Or2 or = new POO_PortasLogicas.Or2();
-            return 0;
+            POO_PortasLogicas.Or2 or1 = new POO_PortasLogicas.Or2(this.saidaUL1, this.saidaUL2);
+            int resultOr1 = or1.result();
+            POO_PortasLogicas.Or2 or2 = new POO_PortasLogicas.Or2(resultOr1, this.saidaUL3);
+            int resultOr2 = or2.result();
+            POO_PortasLogicas.Or2 or3 = new POO_PortasLogicas.Or2(resultOr2, this.saidaSC);
+            
+            return or3.result();;
         }
-
-
 
     }
 }
