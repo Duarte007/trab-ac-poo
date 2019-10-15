@@ -15,6 +15,7 @@ namespace ULA {
         private int saidaD2;
         private int saidaD3;
         private int saidaD4;
+        private int saidaUla;
 
         public Ula(int entradaA, int entradaB, int operacao, int carryIn){
             this.decodificador = new Decodificador(operacao);
@@ -34,14 +35,18 @@ namespace ULA {
             this.carryOut = somadorCompleto.getCarryOut();
         }
 
-        public int resolveCircuito(){
+        public override void resolveCircuito(){
             POO_PortasLogicas.Or2 or1 = new POO_PortasLogicas.Or2(this.saidaUL1, this.saidaUL2);
             int resultOr1 = or1.result();
             POO_PortasLogicas.Or2 or2 = new POO_PortasLogicas.Or2(resultOr1, this.saidaUL3);
             int resultOr2 = or2.result();
             POO_PortasLogicas.Or2 or3 = new POO_PortasLogicas.Or2(resultOr2, this.saidaSC);
             
-            return or3.result();;
+            this.saidaUla = or3.result();;
+        }
+
+        public int getSaidaUla(){
+            return this.saidaUla();
         }
 
     }

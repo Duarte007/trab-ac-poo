@@ -33,7 +33,7 @@ namespace ULA {
             }
         }
 
-        public void resolveCircuito(){
+        public override void resolveCircuito(){
             POO_PortasLogicas.And2 and1 = new POO_PortasLogicas.And2();
             POO_PortasLogicas.And2 and2 = new POO_PortasLogicas.And2();
             POO_PortasLogicas.And2 and3 = new POO_PortasLogicas.And2();
