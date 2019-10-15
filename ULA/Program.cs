@@ -2,10 +2,24 @@
 
 namespace ULA {
     class Program {
+        int numA = 0, numB = 0;
+
+        static void getEntradaA(){
+            do{
+                Console.Write("Insira um 0 ou 1 para A: ");
+            } while (!int.TryParse(Console.ReadLine(), out numA) && (numA != 0 && numA != 1));
+        }
+
+        static void getEntradaB(){
+            do{
+                Console.Write("Insira um 0 ou 1 para B: ");
+            } while (!int.TryParse(Console.ReadLine(), out numB) && (numB != 0 && numB != 1));
+        }
+
         static void Main(string[] args) {
          
 
-            int numA = 0, numB = 0, operacao;            
+            int operacao;            
             char rep;
             do
             {
@@ -13,15 +27,22 @@ namespace ULA {
                 Console.Write("\n\n(0) A and B\n(1) A or B\n(2) not A \n(3) not B \n(4) A + B" + "\n\nEscolha a operação: ");
                 while (!int.TryParse(Console.ReadLine(), out operacao) && (operacao < 0 || operacao > 3)) ;
 
-                do
-                {
-                    Console.Write("Insira um 0 ou 1 para A: ");
-                } while (!int.TryParse(Console.ReadLine(), out numA) && (numA >= 0 && numA <= 1));
+                switch(operacao){
+                    case 0:
+                    case 1:
+                    case 4:
+                        getEntradaA();
+                        getEntradaB();
+                    break;
 
-                do
-                {
-                    Console.Write("Insira 0 ou 1 para B: ");
-                } while (!int.TryParse(Console.ReadLine(), out numB) && (numA >= 0 && numA <= 1));
+                    case 2:
+                        getEntradaA();
+                    break;
+
+                    case 3:
+                        getEntradaB();
+                    break;
+                }
 
                 Console.Clear();
                 Console.WriteLine("A: " + numA.ToString() + " | B: " + numB.ToString());

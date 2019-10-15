@@ -42,11 +42,11 @@ namespace ULA {
             int resultOr2 = or2.result();
             POO_PortasLogicas.Or2 or3 = new POO_PortasLogicas.Or2(resultOr2, this.saidaSC);
             
-            this.saidaUla = or3.result();;
+            this.saidaUla = or3.result();
         }
 
         public int getSaidaUla(){
-            return this.saidaUla();
+            return this.saidaUla;
         }
 
     }
