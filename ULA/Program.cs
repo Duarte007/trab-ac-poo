@@ -2,7 +2,7 @@
 
 namespace ULA {
     class Program {
-        int numA = 0, numB = 0;
+        static int numA = 0, numB = 0;
 
         static void getEntradaA(){
             do{
