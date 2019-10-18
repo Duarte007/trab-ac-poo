@@ -4,9 +4,7 @@ using POO_PortasLogicas;
 namespace ULA {
     public abstract class Circuito {
 
-        public virtual void resolveCircuito(){
-            
-        }
+        public abstract void resolveCircuito();
 
     }
 }

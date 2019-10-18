@@ -42,7 +42,7 @@ namespace ULA {
                 do{
                     try{
                         Console.Clear();
-                        Console.Write("\n\n(0) A and B\n(1) A or B\n(2) not A \n(3) not B \n(4) A + B" + "\n\nEscolha a operação: ");
+                        Console.Write("\n\n(0) A and B\n(1) A or B\n(2) not B \n(3) A + B" + "\n\nEscolha a operação: ");
                         operacao = int.Parse(Console.ReadLine());
                         if(operacao < 0 || operacao > 4){
                             Console.WriteLine("Opcao invalida!");
@@ -56,16 +56,12 @@ namespace ULA {
                 switch(operacao){
                     case 0:
                     case 1:
-                    case 4:
+                    case 3:
                         getEntradaA();
                         getEntradaB();
                     break;
 
                     case 2:
-                        getEntradaA();
-                    break;
-
-                    case 3:
                         getEntradaB();
                     break;
 
