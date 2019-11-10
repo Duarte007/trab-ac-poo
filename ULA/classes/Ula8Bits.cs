@@ -23,5 +23,9 @@ namespace ULA {
             return saidas;
         }
 
+        public int getCarryOut(){
+            return ulas1Bit[ulas1Bit.Count - 1].getCarryOut();
+        }
+
     }
 }
