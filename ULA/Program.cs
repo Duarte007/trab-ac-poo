@@ -74,7 +74,7 @@ namespace ULA {
                 Console.WriteLine("A: " + numA.ToString() + " | B: " + numB.ToString());
 
                 Ula u = new Ula(numA, numB, operacao, 0);
-                u.resolveCircuito();
+                // u.resolveCircuito();
                 Console.WriteLine("O resultado é: " + u.getSaidaUla());
 
                 do {

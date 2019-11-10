@@ -33,6 +33,7 @@ namespace ULA {
             this.somadorCompleto.resolveCircuito();
             this.saidaSC = somadorCompleto.getSaidaSC();
             this.carryOut = somadorCompleto.getCarryOut();
+            this.resolveCircuito();
         }
 
         public override void resolveCircuito(){
@@ -47,6 +48,10 @@ namespace ULA {
 
         public int getSaidaUla(){
             return this.saidaUla;
+        }
+
+        public int getCarryOut(){
+            return this.carryOut;
         }
 
     }
