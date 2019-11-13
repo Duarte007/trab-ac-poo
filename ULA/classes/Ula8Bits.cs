@@ -6,19 +6,20 @@ namespace ULA {
     public class Ula8Bits {
         List<Ula> ulas1Bit = new List<Ula>();
         int[] saidas = new int[8];
-        public Ula8Bits(int[] numA, int[] numB, int operacao){
+
+        public Ula8Bits(int[] numA, int[] numB, int operacao, int carryIn){
             if(numA.Length == numB.Length && numA.Length == 8){
-                for(int i = 0 ; i < 8 ; i++){
-                    int carryIn = ulas1Bit.Contains(ulas1Bit[ulas1Bit.Count-1]) ? 
-                                    ulas1Bit[ulas1Bit.Count-1].getCarryOut() : 0; 
-                    ulas1Bit.Add(new Ula(numA[i], numB[i], operacao, carryIn));
+                for(int i = 7 ; i >= 0 ; i--){
+                    int currentCarryIn = ulas1Bit.Count-1 != -1 ? 
+                                    ulas1Bit[ulas1Bit.Count-1].getCarryOut() : carryIn; 
+                    ulas1Bit.Add(new Ula(numA[i], numB[i], operacao, currentCarryIn));
                 }
             }
         }
 
         public int[] getSaidas(){
-            for(int i = 0 ; i < ulas1Bit.Count ; i++) {
-                saidas[i] = ulas1Bit[i].getSaidaUla();
+            for(int i = ulas1Bit.Count -1, y = 0 ; i >= 0 ; i--, y++) {
+                saidas[y] = ulas1Bit[i].getSaidaUla();
             }
             return saidas;
         }

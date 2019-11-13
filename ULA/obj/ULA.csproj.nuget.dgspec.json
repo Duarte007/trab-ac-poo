@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\ULA.csproj": {}
+    "D:\\Acadêmico\\PUC\\2° Periodo\\AC\\trabalho\\ULA\\ULA\\ULA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\ULA.csproj": {
+    "D:\\Acadêmico\\PUC\\2° Periodo\\AC\\trabalho\\ULA\\ULA\\ULA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\ULA.csproj",
+        "projectUniqueName": "D:\\Acadêmico\\PUC\\2° Periodo\\AC\\trabalho\\ULA\\ULA\\ULA.csproj",
         "projectName": "ULA",
-        "projectPath": "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\ULA.csproj",
+        "projectPath": "D:\\Acadêmico\\PUC\\2° Periodo\\AC\\trabalho\\ULA\\ULA\\ULA.csproj",
         "packagesPath": "C:\\Users\\Duarte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Duarte\\source\\repos\\ULA\\ULA\\obj\\",
+        "outputPath": "D:\\Acadêmico\\PUC\\2° Periodo\\AC\\trabalho\\ULA\\ULA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

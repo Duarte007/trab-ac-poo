@@ -26,3 +26,17 @@ C:\Users\Ian\Documents\GitHub\trab-ac-poo\ULA\bin\Debug\netcoreapp2.1\ULA.pdb
 C:\Users\Ian\Documents\GitHub\trab-ac-poo\ULA\bin\Debug\netcoreapp2.1\POO_PortasLogicas.dll
 C:\Users\Ian\Documents\GitHub\trab-ac-poo\ULA\bin\Debug\netcoreapp2.1\POO_PortasLogicas.xml
 C:\Users\Ian\Documents\GitHub\trab-ac-poo\ULA\obj\Debug\netcoreapp2.1\ULA.csproj.CopyComplete
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.csprojAssemblyReference.cache
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.csproj.CoreCompileInputs.cache
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.AssemblyInfoInputs.cache
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.AssemblyInfo.cs
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.dll
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.pdb
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.deps.json
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.runtimeconfig.json
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.runtimeconfig.dev.json
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.dll
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\ULA.pdb
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\POO_PortasLogicas.dll
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\bin\Debug\netcoreapp2.1\POO_PortasLogicas.xml
+D:\Acadêmico\PUC\2° Periodo\AC\trabalho\ULA\ULA\obj\Debug\netcoreapp2.1\ULA.csproj.CopyComplete
